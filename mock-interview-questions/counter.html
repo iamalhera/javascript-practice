@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter with vanilaJS</title>
+</head>
+<body>
+    <h1>Counter</h1>
+    <button id="increase">+</button>
+    <label id="input" >0</label>
+    <button id="decrease">-</button>
+
+    <script>
+        var inputValue = document.querySelector("#input");
+        var increase = document.querySelector("#increase");
+        var decrease = document.querySelector("#decrease");
+
+        var value = 0 ;
+
+        increase.addEventListener('click',()=>{
+            value++ ;
+            inputValue.innerText = value ;
+        })
+
+        decrease.addEventListener('click',()=>{
+            value-- ;
+            inputValue.innerText = value ;
+        })
+    </script>
+</body>
+</html>
