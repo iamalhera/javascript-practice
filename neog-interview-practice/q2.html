@@ -9,6 +9,27 @@
 <body>
 
     <!-- Question :: Create a web app where I can input a text. Now create two buttons + and -. On clicking + increase the fontSize by 2px and vice versa. -->
-    
+    <button id="increase">+</button>
+    <input type="text" id="input">
+    <button id="decrease">-</button>
+
+
+    <script>
+        var increaseBtn = document.querySelector("#increase");
+        var decreaseBtn = document.querySelector("#decrease");
+        var input = document.querySelector("#input");
+
+        var value = 10 ;
+        input.style.fontSize = value + "px" ;
+
+        increaseBtn.addEventListener('click',()=>{
+            value = value + 2 ;
+            input.style.fontSize = value + "px";
+        })
+        decreaseBtn.addEventListener('click',()=>{
+            value = value - 2 ;
+            input.style.fontSize = value + "px";
+        })
+    </script>
 </body>
 </html>
