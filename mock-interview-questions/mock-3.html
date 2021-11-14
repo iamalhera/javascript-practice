@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock</title>
+    <link href="mock3css.css" rel="stylesheet">
+</head>
+<body>
+
+    <button id="circle">Circle</button>
+    <button id="rectangle">Rectangle</button>
+    <div id="output" >Output</div>
+
+    <script>    
+    var circleBtn = document.querySelector("#circle");
+    var rectangleBtn = document.querySelector("#rectangle");
+    var output = document.querySelector("#output");
+    
+    circleBtn.addEventListener('click',()=>{
+        output.style.borderRadius = 50 + "%" ;
+    }) 
+    rectangleBtn.addEventListener('click',()=>{
+        output.style.borderRadius = 0 + "rem" ;
+    }
+    )
+    </script>
+    
+</body>
+</html>
