@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tweet Functionality</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Question :: Create an input and a tweet button which accepts upto 10 characters and when there is no input it is disabled  -->
+    <H1>Tweet Functionality</H1>
+    <input type="text" maxlength="10" id="input">
+    <button id="tweet-btn">Tweet</button>
+    
+    <script>
+        var input = document.querySelector("#input");
+        var tweetBtn = document.querySelector("#tweet-btn");
+
+        tweetBtn.disabled = true ;
+
+        input.addEventListener('input',()=>{
+            tweetBtn.disabled = false ;
+        })
+
+
+
+    </script>
+</body>
+</html>
