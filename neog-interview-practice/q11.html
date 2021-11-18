@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q11</title>
+</head>
+<body>
+    <!-- Question 11 :: Create a password checker web app. If password is lesser than 10 characters then show an error to user otherwise show success. Someone can ask to make the submit button disabled. Some can ask to make the input field green or red depending on input. -->
+    <input type="text" id="input">
+    <button id="check-btn">Check</button>
+    <div id="output"></div>
+
+
+    <script>
+        var input = document.querySelector("#input");
+        var checkBtn = document.querySelector("#check-btn");
+        var output = document.querySelector("#output");
+
+        checkBtn.addEventListener('click',()=>{
+            if(input.value.length < 10){
+                output.innerText = "Password is Short!" ;
+                input.style.color = "red";
+            }
+            else{
+                output.innerText = " Great! Your password is optimized" ;
+                input.style.color = "green";
+            }
+
+            if(input.value.length === 13){
+                checkBtn.disabled = true ;
+                output.innerText = " Button is disabled ";
+                input.style.color = "black" ;
+            }
+        })
+    </script>
+</body>
+</html>
