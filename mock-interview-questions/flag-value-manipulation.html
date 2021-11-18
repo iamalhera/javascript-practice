@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Value Manipulation</title>
+</head>
+<body>
+    <h1>flag value manipulation in js</h1>
+    
+    <script>
+        var array=[
+            {
+                task : "running",
+                flag : false
+            },
+            {
+                task : "coding",
+                flag : true
+            },
+            {
+                task : "introspection",
+                flag : true
+            },
+            {
+                task : "exercise",
+                flag : false
+            }
+        ]
+        for(let i=0 ; i<array.length ; i++){
+            if(array[i].flag === true){
+                console.log(array[i].task) ;
+            }
+        }
+        
+    </script>
+</body>
+</html>
