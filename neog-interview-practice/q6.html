@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+</head>
+<body>
+    <!-- Question 6 :: Create a web app with a button loaded. Show a text loading... on a web app. However, hide it if I click on the button loaded. -->
+    <button id="loaded-btn">Loaded</button>
+    <div id="loading-text">Loading...</div>
+
+    <script>
+        var loadedBtn = document.querySelector("#loaded-btn");
+        var loadingText = document.querySelector("#loading-text");
+
+        loadedBtn.addEventListener('click',()=>{
+            loadingText.style.display = "none";
+        })
+    </script>
+</body>
+</html>
