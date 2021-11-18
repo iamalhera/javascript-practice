@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5px, 10px border</title>
+    <style>
+    #heading{
+        max-width: fit-content;
+        padding: 1rem;
+    }
+    </style>
+</head>
+<body>
+    <!-- Question :: Create 2 buttons named 5px border and 10 px border and style a div accordingly -->
+
+    <h2 id="heading">Dynamic Border</h2>
+    <button id="fivepx">5px border</button>
+    <button id="tenpx">10px border</button>
+
+    <script>
+        var heading = document.querySelector("#heading");
+        var fivepxBtn = document.querySelector("#fivepx");
+        var tenpxBtn = document.querySelector("#tenpx");
+
+        fivepxBtn.addEventListener('click',()=>{
+            heading.style.border = " 5px solid ";
+        })
+        tenpxBtn.addEventListener('click',()=>{
+            heading.style.border = " 10px solid ";
+        })
+    </script>
+</body>
+</html>
