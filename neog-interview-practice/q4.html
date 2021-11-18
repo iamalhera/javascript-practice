@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+</head>
+<body>
+    <!-- Question 4 :: Create a web app where I can input a text. Now, create three buttons: red, green, blue. Clicking on the button should change the text color. -->
+    <input type="text" id="input">
+    <button id="red-btn">RED</button>
+    <button id="green-btn">GREEN</button>
+    <button id="blue-btn">BLUE</button>
+
+    <script>
+        var input = document.querySelector("#input");
+        var redBtn = document.querySelector("#red-btn");
+        var greenBtn = document.querySelector("#green-btn");
+        var blueBtn = document.querySelector("#blue-btn");
+
+        redBtn.addEventListener('click',()=>{
+            input.style.color = "red";
+        })
+        greenBtn.addEventListener('click',()=>{
+            input.style.color = "green";
+        })
+        blueBtn.addEventListener('click',()=>{
+            input.style.color = "blue";
+        })
+    </script>
+</body>
+</html>
