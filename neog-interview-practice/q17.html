@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Q17 : Create a CLI app which would detect fake news. This app will take news as input and then source.
+
+    If source is Facebook or whatsapp then it will output user saying, "Don't believe things on FB and Whatsapp". Can you extend this to include telegram as well? -->
+    <h1>Q17</h1>
+
+    <script>
+        var news = prompt("Please Enter News : ") ;
+        var source = prompt(" Is your souce of news whatsapp, facebook or other : ");
+        if(source === "facebook" ||source === "whatsapp" ||source === "telegram"){
+            console.log("Don't believe everything that is on whatsapp or facebook!");
+        }
+        else{
+            console.log("This particular news might be true! ");
+        }
+    </script>
+    
+</body>
+</html>
