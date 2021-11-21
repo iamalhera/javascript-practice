@@ -8,6 +8,23 @@
 </head>
 <body>
     <H1>CLI APP</H1>
-    
+    <!-- Q5 : Create a CLI app which takes name, unit test marks, pre final marks, final marks of 5 students. And then print who has the highest marks. What if I ask you to print the average as well? -->
+    <script>
+        var name = [4];
+        var testmarks = [4];
+        var prefinalmarks = [4];
+        var finalmarks = [4];
+        var totalmarks = [4];
+        for(let i=0 ; i++ ; i<5){
+            testmarks[i] = prompt("testMark of student");
+            prefinalmarks[i] = prompt("preFinalMark of student");
+            finalmarks[i] = prompt("finalmarks of student");
+            totalmarks[i] = testmarks[i] + prefinalmarks[i] + finalmarks[i] ;
+        }
+
+        for(let j=0 ; j++ ; j<5){
+            console.log("Total marks of student"+(i+1) + totalmarks[i]);
+        }
+    </script>
 </body>
 </html>
