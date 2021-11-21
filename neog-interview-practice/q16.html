@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q16</title>
+</head>
+<body>
+    <!-- Q16 : Create two objects with name, age, and power as Ram, 2500, Treta. Krishna, 2325, Dwapar. Say if every character in name is worth 35 power points.
+
+    Write a function which takes two objects and return the person with more power based on their name and power both. -->
+    <h1>Q16</h1>
+
+    <script>
+        var object1 = {
+            name : "ram",
+            age : 2500,
+            power : "treta"
+        }
+        var object2 = {
+            name : "krishna",
+            age : 2325,
+            power : "dwapar"
+        }
+
+        function morePower(o1, o2){
+            var totalPowerOfO1 = ((o1.name.length) *35 )+ ((o1.power.length) * 10) ;
+            var totalPowerOfO2 = (o2.name.length *35) + (o2.power.length * 10) ;
+            if(totalPowerOfO1 > totalPowerOfO2){
+                return o1.name
+            }
+            else{
+                return o2.name
+            }
+        }
+
+        console.log(morePower(object1, object2));
+    </script>
+</body>
+</html>
