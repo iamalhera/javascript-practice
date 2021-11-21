@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Q15 : Create two objects with name, age, and power as Ram, 2500, Treta. Krishna, 2325, Dwapar Write a function which takes two objects and return the person with more power. -->
+    Q15
+
+    <script>
+        var object1 = {
+            name : "ram",
+            age : 2500,
+            power : "treta"
+        }
+        var object2 = {
+            name : "krishna",
+            age : 2325,
+            power : "dwapar"
+        }
+        
+        function morePower(o1, o2){
+            if(o1.power.length > o2.power.length){
+                return o1.name
+            }
+            else{
+                return o2.name
+            }
+        }
+
+        console.log(morePower(object1, object2));
+    </script>
+</body>
+</html>
