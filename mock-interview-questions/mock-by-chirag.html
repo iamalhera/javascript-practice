@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="user-input">
+    <label id="counter-lbl">30</label>
+
+
+
+    <script>
+    var userInput = document.querySelector("#user-input");
+    var counter = document.querySelector("#counter-lbl");
+    
+    userInput.addEventListener('input', ()=>{
+        var length = userInput.value.length ;
+        var realCounter   = 30 - length 
+        counter.innerText = realCounter;
+        if(realCounter <0){
+            counter.style.color = "red";
+        }
+        else{
+            counter.style.color = "green";
+        }
+    })
+    
+    </script>
+    
+</body>
+</html>
