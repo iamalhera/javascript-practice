@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neog Interview</title>
+</head>
+<body>
+    <!-- Create a text input. Allow users to enter characters in it. Show an error message, “You have reached your limit” just below the input element if the user tries to enter more than 10 characters. -->
+    <h1>Solution</h1>
+    <input type="text" id="user-input">
+    <label for="" id="message-label"></label>
+
+    <script>
+    var userInput = document.querySelector("#user-input");
+    var message = document.querySelector("#message-label");
+
+    userInput.addEventListener('input',()=>{
+        var lengthOfChar = userInput.value.length ;
+        if(lengthOfChar > 9 ){
+            message.innerText = "You have reached your limit!";
+        }
+        else{
+            
+            var leftChar = 10 - lengthOfChar ;
+        message.innerText = leftChar ;
+        }
+        
+    })
+    </script>
+</body>
+</html>
